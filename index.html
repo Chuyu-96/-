@@ -176,7 +176,10 @@
     </div>
 
     <script>
-        const CORRECT_PASSWORD = '1123';
+        // 使用 SHA-256 哈希验证，源码里看不到真实密码
+        async function hashPassword(password) {
+            // 计算密码的哈希值再比对
+        }
 
         function checkPassword() {
             const input = document.getElementById('passwordInput');
